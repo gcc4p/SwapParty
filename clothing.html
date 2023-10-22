@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing</title>
+        <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bowlby One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alumni Sans Inline One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Climate Crisis' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Contrail One' rel='stylesheet'>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <header>
+        <h2> SwapParty</h2>
+
+    </header>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #dad3ab;
+    font-family: 'trebuchet ms', sans-serif;
+}
+
+form {
+	 width: 100%;
+	 height: 100%;
+	 overflow: hidden;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #0b1812;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #546b62;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #395249;
+  cursor: pointer;
+}
+    </style>
+
+
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Criteria for the clothing </h1>
+        
+        <fieldset>
+          
+          <!--- <legend><span></span> Select up to 3 keywords that describe the style of clothing you wish to receive. </legend> ---> 
+        
+          <label>Select up to 3 keywords that describe the style of clothing you wish to receive:</label> <br>
+          <input type="checkbox" id="Skate" value="Sk" name="keywords"><label class="light" for="Skater">Skater Style (unisex)</label><br>
+          <input type="checkbox" id="Lounging" value="L" name="keywords"><label class="light" for="Lounging">Lounging/Sweats (unisex)</label><br>
+          <input type="checkbox" id="Oversized" value="OS" name="keywords"><label class="light" for="Oversized">Oversized, Streetwear (unisex)</label><br>
+          <input type="checkbox" id="PreppyW" value="PW" name="keywords"><label class="light" for="PreppyW">Preppy (Women)</label><br>
+          <input type="checkbox" id="PreppyM" value="PM" name="keywords"><label class="light" for="PreppyM">Preppy (Men)</label><br>
+          <input type="checkbox" id="AlternativeW" value="AW" name="keywords"><label class="light" for="AltW">Alternative (Women)</label><br>
+          <input type="checkbox" id="AltM" value="AM" name="keywords"><label class="light" for="AltM">Alternative (Men)</label><br>
+          <input type="checkbox" id="CottageW" value="CW" name="keywords"><label class="light" for="CottageW">Cottage Core (Women)</label><br>
+          <input type="checkbox" id="CottageM" value="CM" name="keywords"><label class="light" for="CottageM">Cottage Core (Men)</label><br>
+          <input type="checkbox" id="GrunW" value="GW" name="keywords"><label class="light" for="GrunW">Grunde (Women)</label><br>
+          <input type="checkbox" id="GrunM" value="GM" name="keywords"><label class="light" for="GrunM">Grunde (Men)</label><br>
+          <input type="checkbox" id="BusinessW" value="BW" name="keywords"><label class="light" for="BusinessW">Business Casual (Women)</label><br>
+          <input type="checkbox" id="BusinessM" value="BM" name="keywords"><label class="light" for="BusinessM">Business Casual (Men)</label><br>
+
+
+
+            <pre> </pre>
+          <h4>Chest measurements</h4>
+
+<div class="slidecontainer">
+  <input type="range" min="20" max="60" value="42" class="slider" id="chestRange">
+  <p><small>Inches: <span id="demo"></span> </small> </p>
+</div>
+<script>
+    var slider = document.getElementById("chestRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<pre> </pre>
+<h4>Waist measurements</h4>
+
+<div class="slidecontainer">
+<input type="range" min="20" max="60" value="35" class="slider" id="waistRange">
+<p><small>Inches: <span id="waist"></span> </small> </p>
+</div>
+
+<script>
+var sliderW = document.getElementById("waistRange");
+var outputW = document.getElementById("waist");
+outputW.innerHTML = sliderW.value;
+
+sliderW.oninput = function() {
+  outputW.innerHTML = this.value;
+}
+</script>
+
+<pre> </pre>
+<h4>Hip measurements</h4>
+
+<div class="slidecontainer">
+<input type="range" min="20" max="60" value="35" class="slider" id="hipRange">
+<p><small>Inches: <span id="hip"></span> </small> </p>
+</div>
+
+<script>
+var sliderHI = document.getElementById("hipRange");
+var outputHI = document.getElementById("hip");
+outputHI.innerHTML = sliderHI.value;
+
+sliderHI.oninput = function() {
+  outputHI.innerHTML = this.value;
+}
+</script>
+
+<pre> </pre>
+<h4>Height</h4>
+
+<div class="slidecontainer">
+<input type="range" min="0" max="100" value="50" class="slider" id="height">
+<p><small>Inches: <span id="hei"></span> </small> </p>
+</div>
+
+<script>
+var sliderH = document.getElementById("height");
+var outputH = document.getElementById("hei");
+outputH.innerHTML = sliderH.value;
+
+sliderH.oninput = function() {
+  outputH.innerHTML = this.value;
+}
+</script>
+    
+<pre> </pre>
+
+        <button type="submit">Submit application - we'll be in touch! </button>
+        
+       </form>
+        </div>
+      </div>
+      
+      <footer>
+        <p>&copy; <small> 2023 HackHarvard</small> </p>
+    </footer>
+
+    </body>
+</html>
+

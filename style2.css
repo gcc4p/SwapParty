@@ -1,0 +1,52 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'trebuchet ms', sans-serif;
+    background-color: #fae6c8;
+    font-size: 25px;
+}
+
+header {
+    background-color: #656d4f;
+    color: #ede7c4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles for <h1> inside <header> */
+header h1 {
+    font-size: 102px; 
+    font-family: 'Bagel Fat One', sans-serif;
+}
+
+header h2 {
+    font-size: medium;
+    font-family: 'Bagel Fat One', sans-serif;
+}
+
+/* Styles for <h3> inside <header> */
+header h3 {
+    font-size: 24px; 
+    font-family: 'Cardo';
+    text-align: right; margin-right: 5cm;
+}
+
+header hr {
+    width: 85%;
+    margin: auto; /* Center the <hr> element */
+    border: #4a5039;
+    border-radius: 50px; /* Round the button corners */
+    border-top: 7px solid #4a5039; /* Style the <hr> as an underline */
+    margin-top: -20px; /* Adjust the space between <h1> and <hr> */
+}
+
+
+/* Style the navigation menu */
+nav {
+    background-color: #ede7c4;
+    text-align: center; /* Center-align the buttons */
+    padding: 10px 0; /* Add padding to the top and bottom for spacing */
+}

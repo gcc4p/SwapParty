@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoes</title>
+        <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bowlby One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alumni Sans Inline One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Climate Crisis' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Contrail One' rel='stylesheet'>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">  
+    </head>
+
+    <header>
+        <h2> SwapParty</h2>
+
+    </header>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #dad3ab;
+            font-family: 'trebuchet ms', sans-serif;
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slidecontainer {
+        width: 100%;
+        }
+
+        .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #0b1812;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        }
+
+        .slider:hover {
+        opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #546b62;
+        cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #395249;
+        cursor: pointer;
+        }
+    </style>
+
+
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Criteria for the shoes </h1>
+        
+        <fieldset>
+          
+          <!--- <legend><span></span> Select up to 3 keywords that describe the style of clothing you wish to receive. </legend> ---> 
+        
+          <label>Select up to 3 keywords that describe the type of shoes you wish to receive:</label> <br>
+          <input type="checkbox" id="Running" value="Ru" name="keywords"><label class="light" for="Running">Running</label><br>
+          <input type="checkbox" id="Walking" value="Wa" name="keywords"><label class="light" for="Walking">Walking</label><br>
+          <input type="checkbox" id="Hiking" value="Hi" name="keywords"><label class="light" for="Hiking">Hiking</label><br>
+          <input type="checkbox" id="Professional" value="Pr" name="keywords"><label class="light" for="Professional">Professional</label><br>
+          <input type="checkbox" id="Heels" value="He" name="keywords"><label class="light" for="Heels">Heels</label><br>
+          <input type="checkbox" id="Fancy" value="Fa" name="keywords"><label class="light" for="Fancy">Fancy</label><br>
+          <input type="checkbox" id="Sneakers" value="Sn" name="keywords"><label class="light" for="Sneakers">Sneakers</label><br>
+          <input type="checkbox" id="Slippers" value="Sl" name="keywords"><label class="light" for="Slippers">Slippers</label><br>
+          <input type="checkbox" id="Sandals" value="Sa" name="keywords"><label class="light" for="Sandals">Sandals</label><br>
+
+
+            <pre> </pre>
+            
+<h4>Shoe size (US)</h4>
+
+<div class="slidecontainer">
+<input type="range" min="0" max="20" value="10" class="slider" id="shoeRange">
+<p><small>Inches: <span id="shoeY"></span> </small> </p>
+</div>
+
+<script>
+var sliderW = document.getElementById("shoeRange");
+var outputW = document.getElementById("shoeY");
+outputW.innerHTML = sliderW.value;
+
+sliderW.oninput = function() {
+  outputW.innerHTML = this.value;
+}
+</script>
+
+        <button type="submit">Submit application - we'll be in touch! </button>
+        
+       </form>
+        <pre>
+
+        </pre>
+      
+      <footer>
+        <p>&copy; <small> 2023 HackHarvard</small> </p>
+    </footer>
+
+    </body>
+</html>
+
